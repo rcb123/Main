@@ -14,7 +14,7 @@ public class MyClass {
     System.out.println ("Enter your name: ");
     Scanner keyboard = new Scanner(System.in);
     String userName = keyboard.nextLine();
-     healthInit = takeDamage(userName, 2);
+     healthInit = takeDamage(2);
     System.out.println("You are " + userName + ". You and your family of 4 have decided to travel along the Oregon trail in an effort to better your lives.");
     System.out.println("You buy a wagon, two oxen, and supplies. You gather your most important belongings and set off on your adventure.");
       
@@ -51,7 +51,7 @@ public class MyClass {
   	public static void boss(int userInput, int partyInit, int probability, String userName, int healthInit){//1.2.2
    		System.out.println("You decide to fight the bandits head on.\nAfter being assaulted by waves of bandits, you are attacked by a machine-gun wagon.\nFighting through the gunfire you take down the wagon and aquire furs and medicines.\n\n");
       int range = 2;
-        healthInit = takeDamage(userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
       	searchForFood(userInput, partyInit, probability, healthInit, userName);//1.3
     }
@@ -61,7 +61,7 @@ public class MyClass {
       System.out.println("You take the left path ");
       System.out.println("As you are walking through the left tunnel, you hear squeaks from all over and all of a sudden you are swarmed by thousands of bats. \nYou and your family run all the way down the tunnel until you get out of the cave.\n\n");
       int range = 2;
-        healthInit = takeDamage(userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
       searchForFood(userInput, partyInit, probability, healthInit, userName);//1.3
     }
@@ -118,7 +118,7 @@ public class MyClass {
   	public static void bearAttack(int userInput,int partyInit, int probability, int healthInit, String userName){//1.3.2
       Scanner keyboard = new Scanner(System.in);
       int range = 3;
-      takeDamage(userName, range);
+      takeDamage(range);
       damageTaken(healthInit, userName);
       cave(userInput, partyInit, probability, healthInit, userName);//1.3.3
     }
@@ -166,7 +166,7 @@ public class MyClass {
       Scanner keyboard = new Scanner(System.in);
       System.out.println("A pirateship blocks your path, seeking to plunder your loot/n");
       int range = 3;
-        healthInit = takeDamage(userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
       System.out.println("\nGrazed by a cannon, you drift away to the other side of the river");
       greatPlains(userInput, partyInit, probability, healthInit, userName);
@@ -176,7 +176,7 @@ public class MyClass {
       Scanner keyboard = new Scanner(System.in);
       System.out.println("You are immediately assaulted by boulders raining down on you./n");
       int range = 5;
-        healthInit = takeDamage(userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
       greatPlains(userInput, partyInit, probability, healthInit, userName);
     }
@@ -185,7 +185,7 @@ public class MyClass {
       Scanner keyboard = new Scanner(System.in);
       System.out.println("Boulders jut out from the river, forcing you to dodge./n");
       int range = 3;
-        healthInit = takeDamage(userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
       greatPlains(userInput, partyInit, probability, healthInit, userName);
     }
@@ -216,7 +216,7 @@ public class MyClass {
       Scanner keyboard = new Scanner(System.in);
       System.out.println("You land right in the middle of the river, in a sea of boulders");
       int range = 4;
-        healthInit = takeDamage(userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
       greatPlains(userInput, partyInit, probability, healthInit, userName);
     }
@@ -225,7 +225,7 @@ public class MyClass {
       Scanner keyboard = new Scanner(System.in);
       System.out.println("You land across the river, but the loud thud angers the nearby bears");
       int range = 5;
-        healthInit = takeDamage(userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
       greatPlains(userInput, partyInit, probability, healthInit, userName);
     }
@@ -252,7 +252,7 @@ public class MyClass {
       Scanner keyboard = new Scanner(System.in);
       System.out.println("\n\nAfter brutally slaughtering about 10 buffalo, a group of the males decide to fight back.\nYou get swarmed and run away as fast as possible.\n\n");
       int range = 2;
-        healthInit = takeDamage(userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
       chillin(userInput, partyInit, probability, healthInit, userName);
     }
@@ -354,7 +354,7 @@ public class MyClass {
       Scanner keyboard = new Scanner(System.in);
       System.out.println("You decide to fight the bandits, but it is very difficult as they are on top of the train.\n");
       int range = 4;
-        healthInit = takeDamage(userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
     	trainReward(userInput, partyInit, probability, healthInit, userName);
     }
@@ -369,7 +369,7 @@ public class MyClass {
       Scanner keyboard = new Scanner(System.in);
       System.out.println("You flee from the scene");
     	int range = 2;
-        healthInit = takeDamage( userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
   		riverSecond(userInput, partyInit, probability, healthInit, userName);
     }
@@ -406,7 +406,7 @@ public class MyClass {
       Scanner keyboard = new Scanner(System.in);
       System.out.println("You encounter some terrorist squid. Their mission is to suicide ink you to death.");
     	int range = 3;
-        healthInit = takeDamage( userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
       mountainPass(userInput, partyInit, probability, healthInit, userName);
     }
@@ -415,7 +415,7 @@ public class MyClass {
       Scanner keyboard = new Scanner(System.in);
       System.out.println("You have encountered a rare herd of water buffalo and decide to hunt them.\nUnfortunately, they are more vicious than normal.\n");
         int range = 2;
-        healthInit = takeDamage(userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
       mountainPass(userInput, partyInit, probability, healthInit, userName);
     }
@@ -424,7 +424,7 @@ public class MyClass {
       Scanner keyboard = new Scanner(System.in);
     	System.out.println("You encounter the deadly Osama Squid-Laden and he is out for blood\n");
       int range = 6;
-        healthInit = takeDamage(userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
       underwaterReward(userInput, partyInit, probability, healthInit, userName);
     }
@@ -532,7 +532,7 @@ public class MyClass {
       System.out.println("You encounter llamas in the mountain and have chosen to hunt them.\n\n");
       System.out.println("Unfortunately they did not want to be hunted");
     int range = 1;
-        healthInit = takeDamage( userName, range);
+        healthInit = takeDamage(range);
       	damageTaken(healthInit, userName);
       llamaReward(userInput, healthInit, userName);
     }
@@ -564,18 +564,29 @@ public class MyClass {
       gameOver(userName);
     }   
   
-  public static int takeDamage(String userName,int range){
+  public static int takeDamage(int range){
 	  Random rand = new Random(); 
 	  int random = (rand.nextInt(range));
-	  healthInit= healthInit-random;
-      return healthInit;
+	  damageInt(range, healthInit, random);
+      return(random);
     }
+  
+  public static void damageInt(int range, int healthInit, int random){
+	  healthInit= healthInit-random;
+  }
   
   public static int choiceProb(int range){
   	Random rand = new Random();
 		int probability = (int) (rand.nextInt(range));
     	return probability;
   	}
+  
+  public static void damageDeath(String userName){
+	  if(healthInit == 0){
+		  gameOver(userName);
+	  }
+	  //write damageDeath(); at the end of each method to check for health == 0
+  }
   
   public static void damageTaken(int healthInit, String userName){
     
